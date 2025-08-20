@@ -7,10 +7,27 @@ While I do not have a lot of experience with Pyhton, I wanted to document my pro
 
 # US Census Data Cleaning
 
-Simple data cleaning with Python.
+A simple Python workflow for preparing US Census data:
 
-Importing multiple CSVs with Glob and contactinating them into a single dataframe.
+• Import multiple CSV files using Glob and combine them into a single DataFrame.
 
-Removing duplicates, replacing nan values with zero, splitting and renaming columns where needed.
+• Remove duplicate entries to ensure accuracy.
+
+• Replace missing values (NaN) with zeros.
+
+• Split and rename columns where necessary for clarity and consistency.
 
 
+
+
+# Fictional Sales Data Report
+
+• A Python class that streamlines sales reporting by:
+
+• Importing a period sales report.
+
+• Cleaning and trimming the raw data.
+
+• Generating summary tables for key insights.
+
+• Creating a basic chart to support management’s review and decision-making.
