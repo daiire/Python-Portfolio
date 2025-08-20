@@ -1,0 +1,23 @@
+region,country,Total Sales,Order Count
+APAC,REGIONAL TOTAL,"$980,120.02",342
+APAC,Australia,"$518,766.66",185
+APAC,Singapore,"$227,985.50",79
+APAC,Japan,"$153,076.69",52
+APAC,Philippines,"$80,291.17",26
+EMEA,REGIONAL TOTAL,"$4,124,005.42",1407
+EMEA,Spain,"$1,021,705.97",342
+EMEA,France,"$917,057.85",314
+EMEA,UK,"$411,403.34",144
+EMEA,Italy,"$309,402.87",113
+EMEA,Finland,"$268,714.70",92
+EMEA,Norway,"$246,115.80",85
+EMEA,Denmark,"$192,747.63",63
+EMEA,Germany,"$178,689.08",62
+EMEA,Sweden,"$174,264.10",57
+EMEA,Austria,"$172,793.05",55
+EMEA,Belgium,"$94,528.88",33
+EMEA,Switzerland,"$93,344.91",31
+EMEA,Ireland,"$43,237.24",16
+North America,REGIONAL TOTAL,"$3,174,629.55",1074
+North America,USA,"$2,981,125.21",1004
+North America,Canada,"$193,504.34",70
