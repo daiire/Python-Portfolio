@@ -5,7 +5,7 @@ Welcome to my Python repository portfolio! This repository features a collection
 While I do not have a lot of experience with Pyhton, I wanted to document my progress and showcase my abilities and work. 
 
 
-# US Census Data Cleaning
+# [US Census Data Cleaning](https://github.com/daiire/Python-Portfolio/tree/ee380342b649dc42ae54685f4442b8a49c5f25d3/US%20Census%20(Data%20Cleaning))
 
 A simple Python workflow for preparing US Census data:
 
@@ -20,7 +20,7 @@ A simple Python workflow for preparing US Census data:
 
 
 
-# Fictional Sales Report
+# [Fictional Sales Report](https://github.com/daiire/Python-Portfolio/tree/ee380342b649dc42ae54685f4442b8a49c5f25d3/Fictional%20Sales%20Report%20(Class%20%2B%20Report%20Creation))
 
 • A Python class that streamlines sales reporting by:
 
