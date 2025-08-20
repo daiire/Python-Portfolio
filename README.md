@@ -20,7 +20,7 @@ A simple Python workflow for preparing US Census data:
 
 
 
-# Fictional Sales Data Report
+# Fictional Sales Report
 
 • A Python class that streamlines sales reporting by:
 
