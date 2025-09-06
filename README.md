@@ -6,6 +6,48 @@ While I do not have a lot of experience with Pyhton, I wanted to document my pro
 
 
 
+# 📊 Report Generation
+
+## 🐾 [Endangered Species Observations Analysis](https://github.com/daiire/Python-Portfolio/tree/888047d67a9635422d620b6cb16d4f5ba17e4abd/NatPark%20Biodiversity)
+
+This project analyzes endangered species observation data across multiple national parks and generates visual and PDF reports for conservation insights.
+
+<details> <summary>The workflow includes:</summary>
+
+• Data import: loading species information and park observation data from CSV files.
+
+• Data cleaning: standardizing species common names, filling missing conservation statuses, and creating protected/not protected flags.
+
+• Aggregation & analysis: summarizing species counts by category, protection status, and park, with a focus on endangered species.
+
+• Visualization: generating barplots of endangered species observations by park, formatted for readability with wrapped labels, grids, and legends.
+
+• Automated reporting: creating styled PDF tables of observations, including color-coded species categories and legends for easy interpretation.
+
+This workflow demonstrates practical skills in data wrangling, analysis, visualization, and automated reporting, suitable for conservation research or environmental reporting workflows.
+
+</details>
+
+## 📈 [Sales Report](https://github.com/daiire/Python-Portfolio/tree/ee380342b649dc42ae54685f4442b8a49c5f25d3/Fictional%20Sales%20Report%20(Class%20%2B%20Report%20Creation))
+
+This project implements a Python class to streamline the preparation of sales reports for management.
+
+<details>
+  <summary>The workflow includes:</summary>
+
+• Data import: loading raw period sales reports into a structured format.
+
+• Data cleaning: trimming unnecessary fields and standardizing the dataset for analysis.
+
+• Summary generation: producing key metrics and aggregated tables that highlight performance trends.
+
+• Visualization: creating simple charts to support management’s review and decision-making.
+
+This workflow shows practical skills in data wrangling, reporting automation, and visualization to improve the efficiency of business reporting workflows.
+
+</details>
+
+
 # ✅ Data Cleaning
 
 ## 🌦️ [Indonesian Climate Data](https://github.com/daiire/Python-Portfolio/tree/0c4b6affd8b799f9970cd70318492e4fa0e49138/Indonesian%20Climate%20Data)
@@ -46,44 +88,7 @@ This script demonstrates practical skills in data wrangling, cleaning, and conso
 
 
 
-# 📊 Report Generation
 
-## 📈 [Sales Report](https://github.com/daiire/Python-Portfolio/tree/ee380342b649dc42ae54685f4442b8a49c5f25d3/Fictional%20Sales%20Report%20(Class%20%2B%20Report%20Creation))
 
-This project implements a Python class to streamline the preparation of sales reports for management.
 
-<details>
-  <summary>The workflow includes:</summary>
-
-• Data import: loading raw period sales reports into a structured format.
-
-• Data cleaning: trimming unnecessary fields and standardizing the dataset for analysis.
-
-• Summary generation: producing key metrics and aggregated tables that highlight performance trends.
-
-• Visualization: creating simple charts to support management’s review and decision-making.
-
-This workflow shows practical skills in data wrangling, reporting automation, and visualization to improve the efficiency of business reporting workflows.
-
-</details>
-
-## 🐾 [Endangered Species Observations Analysis](https://github.com/daiire/Python-Portfolio/tree/888047d67a9635422d620b6cb16d4f5ba17e4abd/NatPark%20Biodiversity)
-
-This project analyzes endangered species observation data across multiple national parks and generates visual and PDF reports for conservation insights.
-
-<details> <summary>The workflow includes:</summary>
-
-• Data import: loading species information and park observation data from CSV files.
-
-• Data cleaning: standardizing species common names, filling missing conservation statuses, and creating protected/not protected flags.
-
-• Aggregation & analysis: summarizing species counts by category, protection status, and park, with a focus on endangered species.
-
-• Visualization: generating barplots of endangered species observations by park, formatted for readability with wrapped labels, grids, and legends.
-
-• Automated reporting: creating styled PDF tables of observations, including color-coded species categories and legends for easy interpretation.
-
-This workflow demonstrates practical skills in data wrangling, analysis, visualization, and automated reporting, suitable for conservation research or environmental reporting workflows.
-
-</details>
 
