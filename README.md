@@ -65,9 +65,25 @@ This project implements a Python class to streamline the preparation of sales re
 
 This workflow shows practical skills in data wrangling, reporting automation, and visualization to improve the efficiency of business reporting workflows.
 
-<details>
 
 
+## 🐾 [Endangered Species Observations Analysis]([https://github.com/daiire/Python-Portfolio/tree/main/NatPark%20Biodiversity]))
+
+This project analyzes endangered species observation data across multiple national parks and generates visual and PDF reports for conservation insights.
+
+<details> <summary>The workflow includes:</summary>
+
+• Data import: loading species information and park observation data from CSV files.
+
+• Data cleaning: standardizing species common names, filling missing conservation statuses, and creating protected/not protected flags.
+
+• Aggregation & analysis: summarizing species counts by category, protection status, and park, with a focus on endangered species.
+
+• Visualization: generating barplots of endangered species observations by park, formatted for readability with wrapped labels, grids, and legends.
+
+• Automated reporting: creating styled PDF tables of observations, including color-coded species categories and legends for easy interpretation.
+
+This workflow demonstrates practical skills in data wrangling, analysis, visualization, and automated reporting, suitable for conservation research or environmental reporting workflows.
 
 
 
