@@ -67,7 +67,7 @@ This workflow shows practical skills in data wrangling, reporting automation, an
 
 </details>
 
-## 🐾 [Endangered Species Observations Analysis](https://github.com/daiire/Python-Portfolio/tree/main/NatPark%20Biodiversity)
+## 🐾 [Endangered Species Observations Analysis][(https://github.com/daiire/Python-Portfolio/tree/main/NatPark%20Biodiversity)](https://github.com/daiire/Python-Portfolio/tree/888047d67a9635422d620b6cb16d4f5ba17e4abd/NatPark%20Biodiversity)
 
 This project analyzes endangered species observation data across multiple national parks and generates visual and PDF reports for conservation insights.
 
