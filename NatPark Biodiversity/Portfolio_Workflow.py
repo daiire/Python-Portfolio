@@ -7,7 +7,7 @@ from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Table, TableStyle
 from reportlab.lib import colors
 
-pd.set_option('display.max_columns', None)
+pd.set_option("display.max_columns", None)
 
 # -------------------- Config --------------------
 # Parameterize paths for portability
@@ -25,41 +25,43 @@ def endangered_barplot(data, x_axis_data, x_axis_name, filepath):
 
     Parameters
     ----------
-    data : pd.DataFrame
-        Must contain species names, park names, and observation counts.
-    x_axis_data : str
-        Column to use for the x-axis (e.g. 'common_names' or 'scientific_name').
-    x_axis_name : str
-        Human-friendly axis label (used in the plot).
-    filepath : str
-        Output path for the saved PNG chart.
+    data: pd.DataFrame
+        DataFrame containing [species, park_name, observations].
+    x_axis_data: str
+        Column to use for the x-axis (e.g. "common_names" or "scientific_name").
+    x_axis_name: str
+        Axis label (Used in the plot).
+    filepath: str
+        Output filepath for the saved PNG chart.
     """
-    plt.subplots(figsize=(20, 8))
-    endangered_bar = sns.barplot(x=x_axis_data, y="observations",
-                                 data=data, hue="park_name")
+    plt.subplots(figsize = (20, 8))
+    endangered_bar = sns.barplot(x = x_axis_data, y = "observations",
+                                 data = data, hue = "park_name")
 
     # Wrap and capitalize x-axis labels for readability
     x_wrap = [
         textwrap.fill(
             " ".join([label.capitalize() for label in label.get_text().split()]),
-            width=13
+            width = 13
         )
         for label in endangered_bar.get_xticklabels()
     ]
-    plt.xticks(ticks=endangered_bar.get_xticks(), labels=x_wrap)
+    plt.xticks(ticks = endangered_bar.get_xticks(), labels = x_wrap)
 
     # Gridlines and labels
-    endangered_bar.yaxis.grid(True, linestyle="--", alpha=0.6)
+    endangered_bar.yaxis.grid(True, linestyle = "--", alpha = 0.6)
     plt.xlabel(x_axis_name)
     plt.ylabel("Observations")
     plt.title("Total Observations of Endangered Species")
 
     # Legend placement
-    plt.legend(title="National Park", loc="center left", bbox_to_anchor=(0.725, 1.1))
+    plt.legend(title = "National Park", loc = "center left", bbox_to_anchor = (0.725, 1.1))
 
     # Save figure
-    plt.savefig(filepath, bbox_inches="tight")
+    plt.savefig(filepath, bbox_inches = "tight")
     plt.clf()
+
+    print(f"Chart saved at {filepath}")
 
 
 def mask_names(df, col):
@@ -82,17 +84,17 @@ def build_species_pdf(col_name, data, file_path, title_text):
 
     Parameters
     ----------
-    col_name : str
+    col_name: str
         Column name to use as species identifier (common or scientific).
-    data : pd.DataFrame
+    data: pd.DataFrame
         DataFrame containing [species, park_name, observations].
-    file_path : str
+    file_path: str
         Output path for the PDF file.
-    title_text : str
+    title_text: str
         Title to display at the top of the PDF.
     """
     # Prepare table data (add header row)
-    table_data = [[col_name, 'Park Name', 'Observations']] + data.values.tolist()
+    table_data = [[col_name, "Park Name", "Observations"]] + data.values.tolist()
 
     # Table styling
     style_commands = [
@@ -110,38 +112,38 @@ def build_species_pdf(col_name, data, file_path, title_text):
         ("ALIGN", (0, 0), (-1, -1), "CENTER"),
         ("FONTNAME", (0, 0), (-1, 0), "Helvetica-Bold"),
         ("BOTTOMPADDING", (0, 0), (-1, 0), 5),
-        ("GRID", (0, 0), (-1, -1), 1, colors.black),
-    ]
+        ("GRID", (0, 0), (-1, -1), 1, colors.black)]
+    
     line_break_number = list(range(5, 54, 4))
     for line in line_break_number:
-        style_commands.append(('LINEABOVE', (0, line), (2, line), 3, colors.black))
+        style_commands.append(("LINEABOVE", (0, line), (2, line), 3, colors.black))
 
     # Styles for title and legend
     styles = getSampleStyleSheet()
     title_style = ParagraphStyle(
-        name="TitleStyle",
-        parent=styles["Heading1"],
-        alignment=1,
-        fontSize=16,
-        leading=15,
-        spaceAfter=0
-    )
+        name = "TitleStyle",
+        parent = styles["Heading1"],
+        alignment = 1,
+        fontSize = 16,
+        leading = 15,
+        spaceAfter = 0)
+
     legend_style = ParagraphStyle(
-        name="LegendStyle",
-        parent=styles["Heading2"],
-        alignment=1,
-        fontSize=9,
-        leading=0,
-        spaceAfter=0
-    )
+        name = "LegendStyle",
+        parent = styles["Heading2"],
+        alignment = 1,
+        fontSize = 9,
+        leading = 0,
+        spaceAfter = 0)
+
     legendbody_style = ParagraphStyle(
-        name="Legendbody",
-        parent=styles["Heading3"],
-        alignment=1,
-        fontSize=8,
-        leading=-1,
-        spaceAfter=10
-    )
+        name = "Legendbody",
+        parent = styles["Heading3"],
+        alignment = 1,
+        fontSize = 8,
+        leading = -1,
+        spaceAfter = 10)
+
 
     # Text content for PDF
     title = Paragraph(title_text, title_style)
@@ -156,9 +158,9 @@ def build_species_pdf(col_name, data, file_path, title_text):
     table.setStyle(TableStyle(style_commands))
 
     # Build PDF
-    doc = SimpleDocTemplate(file_path, topMargin=50, bottomMargin=40)
+    doc = SimpleDocTemplate(file_path, topMargin = 50, bottomMargin = 40)
     doc.build([title, legend, legend_body, table])
-    print(f"PDF saved at {file_path}")
+    print(f"Table saved at {file_path}")
 
 
 # -------------------- Workflow --------------------
@@ -173,28 +175,28 @@ def main():
     dfs["common_names"] = dfs["common_names"].apply(lambda x: str(x).split(",")[0])
 
     # Create a quick pivot table to get a breakdown of conversation status
-    con_status_pivot = dfs.pivot_table(index="category",
-                                columns="conservation_status",
-                                aggfunc="size",
-                                fill_value=0)
+    con_status_pivot = dfs.pivot_table(index = "category",
+                                columns = "conservation_status",
+                                aggfunc = "size",
+                                fill_value = 0)
 
     con_status_pivot.columns = ["Endangered", "Threatened", "Species of Concern", "In Recovery"]
 
     con_status_pivot.to_csv("Output/Conservation Status by Species Category.csv")
 
 
-    # Fill missing conservation_status and add 'is_protected' column for pivot table
+    # Fill missing conservation_status and add "is_protected" column for pivot table
     dfs["conservation_status"] = dfs["conservation_status"].fillna("Not of Concern")
-    dfs["is_protected"] = dfs["conservation_status"] != "Not of Concern"
+    dfs["is_protected"] = dfs["conservation_status"] !=  "Not of Concern"
 
 
     # Create another pivot table to get a breakdown of protection status
     protected_count_pivot = (dfs.groupby(["category", "is_protected"])
                        .scientific_name.nunique()
                        .reset_index()
-                       .pivot(index="category",
-                              columns="is_protected",
-                              values="scientific_name"))
+                       .pivot(index = "category",
+                              columns = "is_protected",
+                              values = "scientific_name"))
 
     protected_count_pivot.columns = ["Not Protected", "Protected"]
 
@@ -207,8 +209,8 @@ def main():
 
 
     # Filter endangered species only
-    dfs_endangered = dfs[dfs["conservation_status"] == "Endangered"]
-    dfs_endangered = dfs_endangered.merge(dfo, on="scientific_name")
+    dfs_endangered = dfs[dfs["conservation_status"] ==  "Endangered"]
+    dfs_endangered = dfs_endangered.merge(dfo, on = "scientific_name")
 
     # Aggregate observations
     endangered_count = (
@@ -224,8 +226,8 @@ def main():
     # Order species by observations in Great Smoky Mountains NP
     def order_smoky(df, col):
         return (
-            df[df["park_name"] == "Great Smoky Mountains National Park"]
-            .sort_values("observations", ascending=False)[col]
+            df[df["park_name"] ==  "Great Smoky Mountains National Park"]
+            .sort_values("observations", ascending = False)[col]
         )
 
     order = order_smoky(endangered_count, "common_names")
@@ -267,5 +269,5 @@ def main():
     )
 
 
-if __name__ == "__main__":
+if __name__ ==  "__main__":
     main()
