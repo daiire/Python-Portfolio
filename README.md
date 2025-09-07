@@ -28,6 +28,8 @@ This workflow demonstrates practical skills in data wrangling, analysis, visuali
 
 </details>
 
+In-depth project README available [here](https://github.com/daiire/Python-Portfolio/blob/4759af65ce8607f50d7de6d89f201464a6c958b5/NatPark%20Biodiversity/NatPark_README.md).
+
 ## 📈 [Sales Report](https://github.com/daiire/Python-Portfolio/tree/ee380342b649dc42ae54685f4442b8a49c5f25d3/Fictional%20Sales%20Report%20(Class%20%2B%20Report%20Creation))
 
 This project implements a Python class to streamline the preparation of sales reports for management.
