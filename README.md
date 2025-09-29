@@ -20,11 +20,19 @@ This project analyzes endangered species observation data across multiple nation
 
 • Aggregation & analysis: summarizing species counts by category, protection status, and park, with a focus on endangered species.
 
-• Visualization: generating barplots of endangered species observations by park, formatted for readability with wrapped labels, grids, and legends.
+• Visualization: generating barplots of endangered species observations by park, formatted for readability with wrapped labels, grids, and clear legends.
 
-• Automated reporting: creating styled PDF tables of observations, including color-coded species categories and legends for easy interpretation.
+• Automated reporting: creating styled PDF tables of observations, including color-coded headers and category groupings for easy interpretation.
 
-This workflow demonstrates practical skills in data wrangling, analysis, visualization, and automated reporting, suitable for conservation research or environmental reporting workflows.
+• Category-level insights: examining proportions of protected vs. non-protected species across mammals, birds, plants, and other groups.
+
+• Genus-level analysis: identifying clusters of species labeled “Species of Concern,” including a deeper dive into bat populations (Genus Myotis).
+
+• Contextual findings: comparing Myotis bat observations against overall species averages to assess whether low observation counts align with conservation statuses.
+
+</details>
+
+This workflow demonstrates practical skills in data wrangling, analysis, visualization, and automated reporting — applicable to conservation research, ecological monitoring, or environmental policy reporting.
 
 </details>
 
