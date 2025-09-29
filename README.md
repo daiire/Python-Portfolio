@@ -8,7 +8,7 @@ While I do not have a lot of experience with Pyhton, I wanted to document my pro
 
 # 📊 Report Generation
 
-## 🐾 [Endangered Species Observations Analysis](https://github.com/daiire/Python-Portfolio/tree/888047d67a9635422d620b6cb16d4f5ba17e4abd/NatPark%20Biodiversity](https://github.com/daiire/Python-Portfolio/tree/ea64993b1454abee8b265cd33fe99a4c6870ac63/NatPark%20Biodiversity)
+## 🐾 [Endangered Species Observations Analysis](https://github.com/daiire/Python-Portfolio/tree/888047d67a9635422d620b6cb16d4f5ba17e4abd/NatPark%20Biodiversity](https://github.com/daiire/Python-Portfolio/tree/ea64993b1454abee8b265cd33fe99a4c6870ac63/NatPark%20Biodiversity))
 
 This project analyzes endangered species observation data across multiple national parks and generates visual and PDF reports for conservation insights.
 
