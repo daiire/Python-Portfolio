@@ -13,15 +13,15 @@ NatPark Biodiversity/
 │ └── species_info.csv # Species metadata including category & conservation status
 |
 ├── Output/ # Generated analysis & visualisations - Explained in the 'Key Outputs' section below
-│ ├── Conservation Status by Species Category.csv
-│ ├── Endangered_Barplot.png
-│ ├── Endangered_Barplot_Common.png
-│ ├── Endangered_Obs_Common.pdf
-│ ├── Endangered_Obs_Table.pdf
-│ └── Protection Count by Species Category.csv
+│ ├── Protection Status by Category.csv
+│ ├── Endangered Observations Barplot - Scientific Name.png
+│ ├── Endangered Observations Barplot - Common Name.png
+│ ├── Endangered Species Observation Count - Common Name.PDF
+│ ├── Endangered Species Observation Count - Scientific Name.PDF
+│ └── Protected Count by Species Category.csv
 │
-├── Initial_Workflow.py # Exploratory / first-pass workflow
-└── Portfolio_Workflow.py # Polished, reproducible workflow for portfolio
+├── NatPark Analysis - JNB.ipynb # Jupyter Notebook of analysis
+└── NatPark Analysis - JNB (HTML).html # HTML version of the above file.
 ```
 
 ## Features
@@ -60,13 +60,13 @@ NatPark Biodiversity/
 
 ### Key Outputs (Output/)
 
-• [Conservation Status by Species Category.csv](https://github.com/daiire/Python-Portfolio/blob/b2315b222d99f7285fd755cadec593b95bd70812/NatPark%20Biodiversity/Output/Conservation%20Status%20by%20Species%20Category.csv) -- Species distribution by conservation category. Used in initial analysis.
+• [Protection Status by Category](https://github.com/daiire/Python-Portfolio/blob/92c81b1e655ee7f8c18a40b2300d16133bd31ff8/NatPark%20Biodiversity/Output/Protection%20Status%20by%20Category.csv) -- Species distribution by conservation category. Used in initial analysis.
 
-• [Protection Count by Species Category.csv](https://github.com/daiire/Python-Portfolio/blob/b2315b222d99f7285fd755cadec593b95bd70812/NatPark%20Biodiversity/Output/Protection%20Count%20by%20Species%20Category.csv) -- Breakdown of protected versus unprotected species with percentages. Used in initial analysis.
+• [Protected Count by Species Category](https://github.com/daiire/Python-Portfolio/blob/92c81b1e655ee7f8c18a40b2300d16133bd31ff8/NatPark%20Biodiversity/Output/Protected%20Count%20by%20Species%20Category.csv) -- Breakdown of protected versus unprotected species with percentages. Used in initial analysis.
 
-• [Endangered_Barplot.png](https://github.com/daiire/Python-Portfolio/blob/b2315b222d99f7285fd755cadec593b95bd70812/NatPark%20Biodiversity/Output/Endangered_Barplot.png) & [Endangered_Barplot_Common.png](https://github.com/daiire/Python-Portfolio/blob/b2315b222d99f7285fd755cadec593b95bd70812/NatPark%20Biodiversity/Output/Endangered_Barplot_Common.png) -- Endangered species observation counts (scientific & common names).
+• [Endangered Observations Barplot - Scientific Name](https://github.com/daiire/Python-Portfolio/blob/main/NatPark%20Biodiversity/Output/Endangered%20Observations%20Barplot%20-%20Scientific%20Name.png) & [Endangered Observations Barplot - Common Name](https://github.com/daiire/Python-Portfolio/blob/92c81b1e655ee7f8c18a40b2300d16133bd31ff8/NatPark%20Biodiversity/Output/Endangered%20Observations%20Barplot%20-%20Common%20Name.png) -- Endangered species observation counts (scientific & common names).
 
-• [Endangered_Obs_Table.pdf](https://github.com/daiire/Python-Portfolio/blob/b2315b222d99f7285fd755cadec593b95bd70812/NatPark%20Biodiversity/Output/Endangered_Obs_Table.pdf) & [Output/Endangered_Obs_Common.pdf](https://github.com/daiire/Python-Portfolio/blob/b2315b222d99f7285fd755cadec593b95bd70812/NatPark%20Biodiversity/Output/Endangered_Obs_Common.pdf) -- Styled tables of endangered species observations by park (scientific & common names).
+• [Endangered Species Observation Count - Scientific Name](https://github.com/daiire/Python-Portfolio/blob/92c81b1e655ee7f8c18a40b2300d16133bd31ff8/NatPark%20Biodiversity/Output/Endangered%20Species%20Observation%20Count%20-%20Scientific%20Name.PDF) & [Endangered Species Observation Count - Common Name](https://github.com/daiire/Python-Portfolio/blob/92c81b1e655ee7f8c18a40b2300d16133bd31ff8/NatPark%20Biodiversity/Output/Endangered%20Species%20Observation%20Count%20-%20Common%20Name.PDF) -- Styled tables of endangered species observations by park (scientific & common names).
 
 ## Skills Demonstrated
 
@@ -79,16 +79,3 @@ NatPark Biodiversity/
 • Automated PDF report generation with ReportLab
 
 • Workflow design for reproducibility and portability
-
-## How to Run
-
-Place observations.csv and species_info.csv in the [Data/](https://github.com/daiire/Python-Portfolio/tree/aa81340319c6bb9329ea178e07154f38534755d5/NatPark%20Biodiversity/Data) directory.
-
-Run the main workflow script:
-
-[python Portfolio_Workflow.py](https://github.com/daiire/Python-Portfolio/blob/b2315b222d99f7285fd755cadec593b95bd70812/NatPark%20Biodiversity/Portfolio_Workflow.py)
-
-##
-
-Results will be exported to the [Output/](https://github.com/daiire/Python-Portfolio/tree/b2315b222d99f7285fd755cadec593b95bd70812/NatPark%20Biodiversity/Output) directory.
-
